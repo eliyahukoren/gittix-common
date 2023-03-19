@@ -4,8 +4,12 @@ interface Color {
     green: number;
 }
 
-declare const color: Color;
+const color: Color = {
+    red: 1,
+    blue: 2,
+    green: 3
+};
 
 console.log(color);
 
-export default Color;
+export default color;
