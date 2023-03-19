@@ -2,7 +2,19 @@
   "name": "@tickets-ek/common",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "types" : "./build/index.d.ts",
+  "files" : [
+    "build/**/*"
+  ],
+  "scripts" : {
+    "clean" : "del ./build/*",
+    "build" :"yarn run clean && tsc"
+  },
   "license": "MIT",
-  "author" : "Eli Koren"
+  "author": "Eli Koren",
+  "devDependencies": {
+    "del-cli": "^5.0.0",
+    "typescript": "^5.0.2"
+  }
 }
