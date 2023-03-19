@@ -1,15 +1,15 @@
 {
   "name": "@tickets-ek/common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./build/index.js",
-  "types" : "./build/index.d.ts",
-  "files" : [
+  "types": "./build/index.d.ts",
+  "files": [
     "build/**/*"
   ],
-  "scripts" : {
-    "clean" : "del ./build/*",
-    "build" :"yarn run clean && tsc"
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "yarn run clean && tsc"
   },
   "license": "MIT",
   "author": "Eli Koren",
